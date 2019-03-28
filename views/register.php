@@ -6,10 +6,11 @@
     <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
     <meta name="author" content="Coderthemes">
 
+
     <!-- App favicon -->
     <link rel="shortcut icon" href="../resources/assets/images/favicon.ico">
     <!-- App title -->
-    <title>Login</title>
+    <title>Register</title>
 
     <!-- App css -->
     <link href="../resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -28,6 +29,7 @@
     <![endif]-->
 
     <script src="../resources/assets/js/modernizr.min.js"></script>
+
 
 </head>
 
@@ -59,46 +61,44 @@
                     <div class="m-t-40 account-pages">
                         <div class="text-center account-logo-box">
                             <h2 class="text-uppercase">
-                                <a href="index.html" class="text-success">
+                                <a href="./" class="text-success">
                                     <span><img src="../resources/assets/images/logo.png" alt="" height="36"></span>
                                 </a>
                             </h2>
                             <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
                         </div>
                         <div class="account-content">
-                            <form class="form-horizontal" action="auth/login.php" method="post">
+                            <form class="form-horizontal" action="post.php" method="post">
+                                <div class="form-group ">
+                                    <div class="col-xs-12">
+                                        <input class="form-control" name="register" type="email" required="" placeholder="Email">
+                                    </div>
+                                </div>
 
                                 <div class="form-group ">
                                     <div class="col-xs-12">
-                                        <input class="form-control" type="email" name="email" required="" placeholder="Email">
+                                        <input class="form-control" name="phone_number" type="number" required="" placeholder="Phone Number">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="col-xs-12">
-                                        <input class="form-control" type="password" name="password" required="" placeholder="Password">
+                                        <input class="form-control" name="password" type="password" required="" placeholder="Password">
                                     </div>
                                 </div>
 
-                                <div class="form-group ">
+                                <div class="form-group">
                                     <div class="col-xs-12">
                                         <div class="checkbox checkbox-success">
-                                            <input id="checkbox-signup" type="checkbox" checked>
-                                            <label for="checkbox-signup">
-                                                Remember me
-                                            </label>
+                                            <input id="checkbox-signup" type="checkbox" checked="checked">
+                                            <label for="checkbox-signup">I accept <a href="#">Terms and Conditions</a></label>
                                         </div>
-
                                     </div>
-                                </div>
-
-                                <div class="form-group text-center m-t-30">
-
                                 </div>
 
                                 <div class="form-group account-btn text-center m-t-10">
                                     <div class="col-xs-12">
-                                        <button class="btn w-md btn-bordered btn-danger waves-effect waves-light" type="submit">Log In</button>
+                                        <button class="btn w-md btn-danger btn-bordered waves-effect waves-light" type="submit">Register</button>
                                     </div>
                                 </div>
 
@@ -113,7 +113,7 @@
 
                     <div class="row m-t-50">
                         <div class="col-sm-12 text-center">
-                            <p class="text-muted">Don't have an account? <a href="register.php" class="text-primary m-l-5"><b>Sign Up</b></a></p>
+                            <p class="text-muted">Already have account?<a href="login.php" class="text-primary m-l-5"><b>Sign In</b></a></p>
                         </div>
                     </div>
 
