@@ -1,6 +1,12 @@
+<?php
+include_once('vendor/autoload.php');
+use App\Product;
+$product = new Product();
+$products = $product->index();
+?>
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -400,108 +406,39 @@
         <!--Start blog feed section-->
         <div class="latest-from-blog text-center">
             <div class="container">
-                <h4>Latest From the Blog</h4>
+                <h4>Products</h4>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-latest">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <img class="" src="resources/frontpage/img/content/blog-post-1.jpg" alt="blog-image">
+                <?php
+                foreach($products as $p){
+                    echo "<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
+                        <div class=\"blog-latest\">
+                            <div class=\"row\">
+                                <div class=\"col-md-6 col-sm-12\">
+                                    <img class=\"\" src=\"views/Uploads/".$p->photo."\" alt=\"blog-image\">
                                 </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <h5><a href="#">Post Title Goes Here</a>
+                                <div class=\"col-md-6 col-sm-12\">
+                                    <h5><a href=\"#\">$p->name</a>
                                     </h5>
-                                    <p><i class="fa fa-clock-o"></i>
-                                        <span class="date">27.6.2014</span>at
-                                        <span class="time">17.33</span>
+                                    <p><i class=\"fa fa-clock-o\"></i>
+                                        <span class=\"date\">$p->quantity</span>at
+                                        <span class=\"time\">$p->price</span>
                                     </p>
-                                    <p class="bl-sort">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="#" class="btn btn-default-red"><i class="fa fa-file-text-o"></i> Read  More</a>
+                                    <a href=\"#\" class=\"btn btn-default-red\"><i class=\"fa fa-file-text-o\"></i> Read  More</a>
                                 </div>
                                 <!--end .blog-details-->
                             </div>
                             <!--end .row-->
                         </div>
                         <!--end .blog-latest -->
-                    </div>
-                    <!--end grid layout-->
-
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-latest">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <img class="" src="resources/frontpage/img/content/blog-post-2.jpg" alt="blog-image">
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <h5><a href="#">Post Title Goes Here</a>
-                                    </h5>
-                                    <p><i class="fa fa-clock-o"></i>
-                                        <span class="date">27.6.2014</span>at
-                                        <span class="time">17.33</span>
-                                    </p>
-                                    <p class="bl-sort">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="#" class="btn btn-default-red"><i class="fa fa-file-text-o"></i> Read  More</a>
-                                </div>
-                                <!--end .blog-details-->
-                            </div>
-                            <!--end .row-->
-                        </div>
-                        <!--end .blog-latest -->
-                    </div>
-                    <!--end grid layout-->
-
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-latest">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <img class="" src="resources/frontpage/img/content/blog-post-3.jpg" alt="blog-image">
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <h5><a href="#">Post Title Goes Here</a>
-                                    </h5>
-                                    <p><i class="fa fa-clock-o"></i>
-                                        <span class="date">27.6.2014</span>at
-                                        <span class="time">17.33</span>
-                                    </p>
-                                    <p class="bl-sort">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="#" class="btn btn-default-red"><i class="fa fa-file-text-o"></i> Read  More</a>
-                                </div>
-                                <!--end .blog-details-->
-                            </div>
-                            <!--end .row-->
-                        </div>
-                        <!--end .blog-latest -->
-                    </div>
-                    <!--end grid layout-->
-
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-latest">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <img class="" src="resources/frontpage/img/content/blog-post-4.jpg" alt="blog-image">
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <h5><a href="#">Post Title Goes Here</a>
-                                    </h5>
-                                    <p><i class="fa fa-clock-o"></i>
-                                        <span class="date">27.6.2014</span>at
-                                        <span class="time">17.33</span>
-                                    </p>
-                                    <p class="bl-sort">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="#" class="btn btn-default-red"><i class="fa fa-file-text-o"></i> Read  More</a>
-                                </div>
-                                <!--end .blog-details-->
-                            </div>
-                            <!--end .row-->
-                        </div>
-                        <!--end .blog-latest -->
-                    </div>
-                    <!--end grid layout-->
+                    </div>";
+                }
+                ?>
+                    
                 </div>
                 <!--end .row main-->
                 <!-- read older button -->
                 <div class="read-older">
-                    <a href="#" class="btn btn-default-red"><i class="fa fa-file-text-o"></i> Read Older Entries</a>
+
                 </div>
             </div>
             <!--end container-->
@@ -517,7 +454,8 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-3">
                         <img src="resources/frontpage/img/header-logo.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.
+                        <p>
+                            
                         </p>
                     </div>
 
