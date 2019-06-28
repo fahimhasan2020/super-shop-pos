@@ -47,10 +47,12 @@ class Sale extends Connection
     }// end of store() Method
 
     public function maxId(){
-        $sql = "SELECT MAX(id) FROM invoice";
+        $sql = "SELECT MAX(id) as bd FROM invoice";
         $sh = $this->dbh->query($sql);
+        $sh->setFetchMode(PDO::FETCH_OBJ);
+        $single = $sh->fetch();
         
-        $sqlQuery = "SELECT * FROM invoice WHERE id=";
+        $sqlQuery = "SELECT * FROM invoice WHERE id=".$single->bd;
         $sth = $this->dbh->query($sqlQuery);
 
         $sth->setFetchMode(PDO::FETCH_OBJ);

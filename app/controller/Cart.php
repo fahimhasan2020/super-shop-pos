@@ -40,8 +40,8 @@ class Cart extends Connection
     }// end of setData Method
 
     public function store(){
-        $sqlQuery = "INSERT INTO `cart` (product_id, name, price )  VALUES ( ?, ?, ?)";
-        $sth = $this->dbh->prepare($sqlQuery);
+        $sqlQuery = "INSERT INTO cart (product_id, name, price )  VALUES ( ?,?,?)";
+        $sth = $this->dbh->prepare( $sqlQuery );
         $dataArray = [ $this->productId, $this->name, $this->price];
         $status = $sth->execute($dataArray);
         if($status)
