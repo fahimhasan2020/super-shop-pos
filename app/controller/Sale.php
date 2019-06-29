@@ -33,6 +33,17 @@ class Sale extends Connection
 
     }// end of setData Method
 
+    public function index(){
+        $sqlQuery = "SELECT * FROM `sales` ORDER BY  `id` DESC";
+
+        $sth = $this->dbh->query($sqlQuery);
+
+        $sth->setFetchMode(PDO::FETCH_OBJ);
+
+        $allData=  $sth->fetchAll();
+        return $allData;
+    }
+
     public function store(){
         $sqlQuery = "INSERT INTO  sales (product, total) VALUES (?,?)";
         $sth = $this->dbh->prepare( $sqlQuery );

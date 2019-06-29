@@ -11,7 +11,7 @@ if(!$status) {
     Utility::redirect('login.php');
     return;
 }
-$product = new \App\Sale();
+$product = new \App\Invoice();
 $products = $product->index();
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ $products = $product->index();
     <!-- App favicon -->
     <link rel="shortcut icon" href="../resources/assets/images/favicon.ico">
     <!-- App title -->
-    <title>Sales | Pos system</title>
+    <title>Products | Pos system</title>
 
     <!-- DataTables -->
     <link href="../resources/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,7 @@ $products = $product->index();
                                     <a href="#">Pages </a>
                                 </li>
                                 <li class="active">
-                                    Blank Page
+                                    Invoice
                                 </li>
                             </ol>
                             <div class="clearfix"></div>
@@ -106,14 +106,16 @@ $products = $product->index();
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card-box table-responsive">
-                            <h4 class="m-t-0 header-title"><b>Sales</b></h4>
-
+                            <h4 class="m-t-0 header-title"><b>Invoice</b></h4>
+                            <p class="text-muted font-13 m-b-30">
+                                List of Invoices.
+                            </p>
                             <table id="datatable" class="table table-striped table-colored table-info">
                                 <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Type</th>
                                     <th>Total</th>
+                                    <th>Type</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
@@ -124,8 +126,8 @@ $products = $product->index();
                                     <tr>
 
                                         <td><?php echo $p->id; ?></td>
-                                        <td><?php echo $p->type; ?></td>
                                         <td><?php echo $p->total; ?></td>
+                                        <td><?php echo $p->type; ?></td>
                                         <td>
                                             <a href="#"><i class="fa fa-eye text-info"></i></a>&nbsp;
                                             <a href="#" data-toggle="modal" data-target="#exampleModal<?php echo $p->id; ?>"><i class="fa fa-pencil text-warning"></i></a>&nbsp;
@@ -146,7 +148,7 @@ $products = $product->index();
                                                     <div class="modal-body">
                                                         <input type="hidden" name="id" value="<?php echo $p->id; ?>">
                                                         <div class="form-group"><label for="quantity">Quantity</label><input
-                                                                    type="number" name="product_quantity_update" class="form-control" id="quantity" value="<?php echo $p->quantity; ?>"></div>
+                                                                type="number" name="product_quantity_update" class="form-control" id="quantity" value="<?php echo $p->quantity; ?>"></div>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

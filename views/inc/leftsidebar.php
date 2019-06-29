@@ -33,7 +33,7 @@
                     <a href="sales.php" class="waves-effect"><i class="mdi mdi-cart-outline"></i><span> Sales </span></a>
                 </li>
                 <li>
-                    <a href="" class="waves-effect"><i class="mdi mdi-clipboard-text"></i><span> Invoices </span></a>
+                    <a href="invoice.php" class="waves-effect"><i class="mdi mdi-clipboard-text"></i><span> Invoices </span></a>
                 </li>
                 <li>
                     <a href="pos.php" class="waves-effect"><i class=" mdi mdi-buffer"></i><span> Pos </span></a>

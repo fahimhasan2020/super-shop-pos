@@ -67,12 +67,9 @@ class Product extends Connection
     }
 
     public function single($id){
-        $sqlQuery = "SELECT FROM `products` WHERE id=".$id;
-
+        $sqlQuery = "SELECT * FROM products WHERE id='$id'";
         $sth = $this->dbh->query($sqlQuery);
-
         $sth->setFetchMode(PDO::FETCH_OBJ);
-
         $allData=  $sth->fetch();
         return $allData;
     }
