@@ -1297,7 +1297,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   padding-bottom: 125px;
   position: relative;
   width: 100%;
-  background: url(https://img-aws.ehowcdn.com/700x/cdn.onlyinyourstate.com/wp-content/uploads/2018/09/10553839_824945270850624_2543305775750823311_o-700x299.jpg) top center no-repeat;
+  background: url('../../img/slider1.jpg') top center no-repeat;
   background-size: cover;
 }
 
@@ -3132,7 +3132,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   height: auto;
   padding: 75px 0;
   text-align: center;
-  background: url(../img/content/heading-bg.jpg) top center no-repeat;
+  background: url(../../img/slider2.jpg) top center no-repeat;
   background-size: cover;
 }
 

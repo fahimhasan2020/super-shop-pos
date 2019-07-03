@@ -10,7 +10,7 @@ $products = $product->index();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home-TakeAway</title>
+    <title>Super shop system</title>
     <!-- Stylesheets -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="resources/frontpage/css/bootstrap.css">
@@ -26,94 +26,9 @@ $products = $product->index();
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
 <div id="main-wrapper">
-    <header id="header">
-        <div class="header-top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-sm-12 col-xs-12">
-                        <div class="header-login">
-                            <a href="./views/login.php">Login</a>
-                            <a href="./views/register.php">Register</a>
-                        </div>
-                        <!-- end .header-login -->
-                        <!-- Header Social -->
-                        <ul class="header-social">
-                            <li><a href="#"><i class="fa fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-google-plus-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-7 col-sm-12 col-xs-12">
-                        <p class="call-us">
-                            Call Us: <a class="font" href="#">+0000 0000</a>
-                            <span class="open-now"><i class="fa fa-check-square"></i>We are open now(9am-10pm)</span>
-                            <span class="close-now"><i class="fa fa-square"></i>We are close now(10pm-9am)</span>
-                        </p>
-                    </div>
-                </div> <!-- end .row -->
-            </div> <!-- end .container -->
-        </div>
-        <!-- end .header-top-bar -->
-
-        <div class="header-nav-bar">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="./" style="margin-top: 10px">
-                            Shupershop
-                        </a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="./">Home</a>
-                            </li>
-                            <li><a href="events.php">Events</a>
-                            </li>
-                            <li><a href="about.php">About</a>
-                            </li>
-                            <li><a href="contact.php">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </div>
-        <!-- end .header-nav-bar -->
-        <!-- small menu section -->
-        <div class="small-menu">
-            <div class="container">
-                <ul class="list-unstyled list-inline">
-
-
-                </ul>
-            </div>
-            <!-- end .container-->
-        </div>
-        <!--end .small-menu -->
-    </header>
-    <!-- end #header -->
+  <?php include ('header.php');?>
 
     <!-- all page-content star -->
     <div id="page-content">
@@ -122,11 +37,11 @@ $products = $product->index();
             <!-- new slide -->
             <div class="ms-slide">
                 <!-- slide background -->
-                <img src="https://res.cloudinary.com/dd14wkl4h/image/upload/v1538744101/superstore-pos.jpg" data-src="https://res.cloudinary.com/dd14wkl4h/image/upload/v1538744101/superstore-pos.jpg" alt="">
+                <img src="resources/img/slider1.jpg" data-src="resources/img/slider1.jpg" alt="">
                 <!-- slide text layer -->
                 <div class="ms-layer ms-caption" style="">
                     <h1 class="text-right">
-                        <span>Hungry?!</span>
+                        <span>Looking for something?</span>
                         <br>Good, we are here
                         <br>to
                         <span class="bold">serve</span>you
@@ -138,14 +53,14 @@ $products = $product->index();
             <!-- new slide -->
             <div class="ms-slide">
                 <!-- slide background -->
-                <img src="https://img-aws.ehowcdn.com/700x/cdn.onlyinyourstate.com/wp-content/uploads/2018/09/10553839_824945270850624_2543305775750823311_o-700x299.jpg" data-src="https://img-aws.ehowcdn.com/700x/cdn.onlyinyourstate.com/wp-content/uploads/2018/09/10553839_824945270850624_2543305775750823311_o-700x299.jpg" alt="">
+                <img src="resources/img/slider2.jpg" data-src="resources/img/slider2.jpg" alt="">
                 <!-- slide text layer -->
                 <div class="ms-layer ms-caption" style="">
                     <h1 class="text-right">
-                        <span>Hungry?!</span>
-                        <br>Good, we are here
-                        <br>to
-                        <span class="bold">serve</span>you
+                        <span>We offer</span>
+                        <br>20% sale
+                        <br>of
+                        <span class="bold">Your favourite </span>products
                     </h1>
                 </div>
             </div>
@@ -153,14 +68,14 @@ $products = $product->index();
             <!-- new slide -->
             <div class="ms-slide">
                 <!-- slide background -->
-                <img src="https://img-aws.ehowcdn.com/700x/cdn.onlyinyourstate.com/wp-content/uploads/2018/09/10553839_824945270850624_2543305775750823311_o-700x299.jpg" data-src="https://img-aws.ehowcdn.com/700x/cdn.onlyinyourstate.com/wp-content/uploads/2018/09/10553839_824945270850624_2543305775750823311_o-700x299.jpg" alt="">
+                <img src="resources/img/slider3.jpg" data-src="resources/img/slider3.jpg" alt="">
                 <!-- slide text layer -->
                 <div class="ms-layer ms-caption" style="">
                     <h1>
-                        <span>Hungry?!</span>
-                        <br>Good, we are here
-                        <br>to
-                        <span class="bold">serve</span>you</h1>
+                        <span>Member</span>
+                        <br>We offer 5%
+                        <br>less
+                        <span class="bold">over</span>total product</h1>
                 </div>
             </div>
             <!-- end of slide -->
@@ -171,9 +86,7 @@ $products = $product->index();
         <div class="container">
             <div class="call-to-action-section">
                 <div class="css-table-cell">
-                    <div class="icon">
-                        <img src="resources/frontpage/img/content/call-to-action-icon1.png" alt="">
-                    </div>
+
                 </div>
                 <div class="text css-table">
                     <div class="css-table-cell">
@@ -409,128 +322,195 @@ $products = $product->index();
         <!--Start blog feed section-->
         <div class="latest-from-blog text-center">
             <div class="container">
-                <h4>Products</h4>
-                <div class="row">
-                <?php
-                foreach($products as $p){
-                    echo "<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
-                        <div class=\"blog-latest\">
-                            <div class=\"row\">
-                                <div class=\"col-md-6 col-sm-12\">
-                                    <img class=\"\" src=\"views/Uploads/".$p->photo."\" alt=\"blog-image\">
-                                </div>
-                                <div class=\"col-md-6 col-sm-12\">
-                                    <h5><a href=\"#\">$p->name</a>
-                                    </h5>
-                                    <p><i class=\"fa fa-clock-o\"></i>
-                                        <span class=\"date\">$p->quantity</span>at
-                                        <span class=\"time\">$p->price</span>
-                                    </p>
-                                    <a href=\"#\" class=\"btn btn-default-red\"><i class=\"fa fa-file-text-o\"></i> Read  More</a>
-                                </div>
-                                <!--end .blog-details-->
-                            </div>
-                            <!--end .row-->
-                        </div>
-                        <!--end .blog-latest -->
-                    </div>";
-                }
-                ?>
-                    
-                </div>
-                <!--end .row main-->
-                <!-- read older button -->
-                <div class="read-older">
 
-                </div>
             </div>
             <!--end container-->
         </div>
         <!--end .latest-from-blog-->
 
-    </div>
-    <!-- end #page-content -->
-    <!--footer start-->
-    <footer id="footer">
         <div class="container">
-            <div class="main-footer">
+            <div class="row">
                 <div class="row">
-                    <div class="col-sm-6 col-md-3">
-                        <img src="resources/frontpage/img/header-logo.png" alt="">
-                        <p>
-
-                        </p>
+                    <div class="col-md-9">
+                        <h3>
+                            New Products</h3>
                     </div>
-
-                    <div class="col-sm-6 col-md-3">
-                        <h5>Quick Links</h5>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="footer-links padd">
-                                    <li><a href="./">Home</a>
-                                    </li>
-                                </ul>
+                    <div class="col-md-3">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                               data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                                                        data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <?php foreach ($products as $p){
+                                    echo "<div class=\"col-sm-3\">
+                                    <div class=\"col-item\">
+                                        <div class=\"photo\">
+                                            <img src=\"views/Uploads/".$p->photo."\" class=\"img-responsive\" alt=\"a\" />
+                                        </div>
+                                        <div class=\"info\">
+                                            <div class=\"row\">
+                                                <div class=\"price col-md-6\">
+                                                    <h5>
+                                                        $p->name</h5>
+                                                    <h5 class=\"price-text-color\">
+                                                        $p->price</h5>
+                                                </div>
+                                                <div class=\"rating hidden-sm col-md-6\">
+                                                    <i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"fa fa-star\"></i>
+                                                </div>
+                                            </div>
+                                            <div class=\"separator clear-left\">
+                                                                            <p class=\"btn-details\">
+                                                    <i class=\"fa fa-list\"></i><a href=\"http://www.jquery2dotnet.com\" class=\"hidden-sm\">More details</a></p>
+                                            </div>
+                                            <div class=\"clearfix\">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>";
+                                } ?>
                             </div>
-
-                            <div class="col-md-6">
-                                <ul class="footer-links">
-                                    <li><a href="about.php">about us</a>
-                                    </li>
-                                    <li><a href="events.php">news & events</a>
-                                    </li>
-                                    <li><a href="contact.php">contact us</a>
-                                    </li>
-                                </ul>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <?php foreach ($products as $p){
+                                    echo "<div class=\"col-sm-3\">
+                                    <div class=\"col-item\">
+                                        <div class=\"photo\">
+                                            <img src=\"views/Uploads/".$p->photo."\" class=\"img-responsive\" alt=\"a\" />
+                                        </div>
+                                        <div class=\"info\">
+                                            <div class=\"row\">
+                                                <div class=\"price col-md-6\">
+                                                    <h5>
+                                                        $p->name</h5>
+                                                    <h5 class=\"price-text-color\">
+                                                        $p->price</h5>
+                                                </div>
+                                                <div class=\"rating hidden-sm col-md-6\">
+                                                    <i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"fa fa-star\"></i>
+                                                </div>
+                                            </div>
+                                            <div class=\"separator clear-left\">
+                                                                            <p class=\"btn-details\">
+                                                    <i class=\"fa fa-list\"></i><a href=\"http://www.jquery2dotnet.com\" class=\"hidden-sm\">More details</a></p>
+                                            </div>
+                                            <div class=\"clearfix\">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>";
+                                } ?>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-md-3">
-                        <h5>Latest Tweets
-                            <span><i class="fa fa-chevron-left"></i>  <i class="fa fa-chevron-right"></i>
-								</span>
-                        </h5>
-
-                        <p><a href="#">takeaway:</a> Take a (Photo) Tour of #Envato's #Melbourne Headquarters (...)
-                            <br>
-                            <span>7 hours ago</span>
-                        </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3>
+                            Most Sold Products</h3>
                     </div>
-
-                    <div class="col-sm-6 col-md-3">
-                        <h5>Newsletter</h5>
-                        <p>Sign up for our newsletter!</p>
-                        <div class="footer-subscribe">
-                            <form>
-                                <input type="Email" placeholder="Email address...">
-                                <button type="submit" value=""><i class="fa fa-plus-circle-o"></i></button>
-                            </form>
+                    <div class="col-md-3">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-example-generic"
+                               data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-primary" href="#carousel-example-generic"
+                                                        data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <?php foreach ($products as $p){
+                                    echo "<div class=\"col-sm-3\">
+                                    <div class=\"col-item\">
+                                        <div class=\"photo\">
+                                            <img src=\"views/Uploads/".$p->photo."\" class=\"img-responsive\" alt=\"a\" />
+                                        </div>
+                                        <div class=\"info\">
+                                            <div class=\"row\">
+                                                <div class=\"price col-md-6\">
+                                                    <h5>
+                                                        $p->name</h5>
+                                                    <h5 class=\"price-text-color\">
+                                                        $p->price</h5>
+                                                </div>
+                                                <div class=\"rating hidden-sm col-md-6\">
+                                                    <i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"fa fa-star\"></i>
+                                                </div>
+                                            </div>
+                                            <div class=\"separator clear-left\">
+                                                                            <p class=\"btn-details\">
+                                                    <i class=\"fa fa-list\"></i><a href=\"http://www.jquery2dotnet.com\" class=\"hidden-sm\">More details</a></p>
+                                            </div>
+                                            <div class=\"clearfix\">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>";
+                                } ?>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <?php foreach ($products as $p){
+                                    echo "<div class=\"col-sm-3\">
+                                    <div class=\"col-item\">
+                                        <div class=\"photo\">
+                                            <img src=\"views/Uploads/".$p->photo."\" class=\"img-responsive\" alt=\"a\" />
+                                        </div>
+                                        <div class=\"info\">
+                                            <div class=\"row\">
+                                                <div class=\"price col-md-6\">
+                                                    <h5>
+                                                        $p->name</h5>
+                                                    <h5 class=\"price-text-color\">
+                                                        $p->price</h5>
+                                                </div>
+                                                <div class=\"rating hidden-sm col-md-6\">
+                                                    <i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"price-text-color fa fa-star\"></i><i class=\"price-text-color fa fa-star\">
+                                                    </i><i class=\"fa fa-star\"></i>
+                                                </div>
+                                            </div>
+                                            <div class=\"separator clear-left\">
+                                                                            <p class=\"btn-details\">
+                                                    <i class=\"fa fa-list\"></i><a href=\"http://www.jquery2dotnet.com\" class=\"hidden-sm\">More details</a></p>
+                                            </div>
+                                            <div class=\"clearfix\">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>";
+                                } ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer-copyright">
-            <div class="container">
-                <p>Copyright 2014 © supershop system.</p>
-                <ul class="footer-social">
-                    <li><a href="#"><i class="fa fa-facebook-square"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-pinterest-square"></i></a>
-                    </li>
-                </ul>
-                <!-- end .footer-social -->
-            </div>
-        </div>
-    </footer>
-    <!-- end #footer -->
+    </div>
+    <?php include ('footer.php');?>
 
 </div>
 <!-- end #main-wrapper -->
